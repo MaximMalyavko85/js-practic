@@ -80,15 +80,20 @@ $.modal = function (options) {
       closing = true;
       $modal.classList.remove("open");
       $modal.classList.add("hide");
+
       setTimeout(() => {
         $modal.classList.remove("hide");
         closing = false;
+        if (typeof options.onClose === "function") {
+          options.onClose();
+        }
       }, ANIMATION_SPEED)
     },
   }
 
   const listener = event => {
-    if (event.target.dataset.close) {
+    const close = event.target.dataset.close;
+    if (close) {
       modal.close();
     }
   }
