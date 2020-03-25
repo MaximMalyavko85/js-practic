@@ -31,6 +31,22 @@ html, body, input, textarea, button {
   right: 50px;
 }
 
+.modal {
+  max-width: 600px;
+  max-height: 300px;
+  margin: 100px auto;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.modal > h2 {
+  text-align: center;
+}
+
+.modal .modal-content {
+  padding: 1rem;
+}
+
 @media (min-width: 768px) {
   #sidebar {
     position: fixed;
