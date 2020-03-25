@@ -47,6 +47,11 @@ html, body, input, textarea, button {
   padding: 1rem;
 }
 
+.error{
+  text-align: center;
+  color: red;
+}
+
 @media (min-width: 768px) {
   #sidebar {
     position: fixed;
